@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario | Desarrollador Full-STACK y SysAdmin</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Share+Tech+Mono&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch-title" id="glitch-target" data-text="MARIO">MARIO</h1>
+            <p class="tagline">&gt; <span id="typewriter"></span><span class="cursor">_</span></p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">// Perfil</a></li>
+            <li><a href="#stack">// Stack Técnico</a></li>
+            <li><a href="#projects">// Proyectos</a></li>
+            <li><a href="#interests">// Intereses</a></li>
+            <li><a href="#contact">// Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <!-- PERFIL PROFESIONAL -->
+        <section id="about" class="section card-steampunk">
+            <h2 class="section-title"><span class="accent">[01]</span> Perfil y Filosofía Técnica</h2>
+            <div class="bio-content">
+                <p>Estudiante del centro <strong>Quevedo</strong> orientado al desarrollo de software y la infraestructura informática. Mi objetivo es consolidar un perfil técnico <strong>autosuficiente, multidisciplinar y de alta capacidad resolutiva</strong>, capaz de abarcar desde el diseño de la arquitectura Back-End hasta la optimización física del entorno de trabajo.</p>
+
+                <p>Mi especialización principal se centra en el desarrollo <strong>Back-End y la Administración de Sistemas Operativos</strong>, aunque funcionaría como un Full-Stack. No obstante, mantengo una solvencia Full-Stack que me permite integrar interfaces dinámicas mediante consumo de APIs asíncronas, conectándolas con bases de datos relacionales y servicios de servidor bien estructurados.</p>
+            </div>
+        </section>
+
+        <!-- NÚCLEOS TECNOLÓGICOS Y NAVEGACIÓN -->
+        <section id="stack" class="section card-steampunk">
+            <h2 class="section-title"><span class="accent">[02]</span> Especializaciones</h2>
+            <div class="bio-content">
+                <p>Haz clic en cualquiera de las áreas para consultar mi experiencia detallada:</p>
+
+                <div class="skills-grid">
+                    <a href="./java/index.html" class="skill-tag">Java ↗</a>
+                    <a href="./python/index.html" class="skill-tag">Python ↗</a>
+                    <a href="./js/index.html" class="skill-tag">JavaScript ↗</a>
+                    <a href="./sysadmin/index.html" class="skill-tag">Linux / SysAdmin ↗</a>
+                    <a href="./hardware/index.html" class="skill-tag">Hardware ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTO REAL Y PROTOTIPOS -->
+        <section id="projects" class="section card-steampunk">
+            <h2 class="section-title"><span class="accent">[03]</span> Desarrollos y Aplicaciones</h2>
+            <div class="projects-grid">
+                <!-- PROYECTO PRINCIPAL (FULL-STACK) -->
+                <article class="project-card" onclick="location.href='./java/index.html'">
+                    <div class="project-header">
+                        <h3>Plataforma Web Integral y Ecosistema Back-End</h3>
+                        <span class="project-tech">Java / Spring Boot / MySQL / JS Fetch</span>
+                    </div>
+                    <p>Aplicación web completa construida sobre una arquitectura Back-End robusta en Java. Integra persistencia de datos relacional (JDBC / MySQL Workbench), APIs en Spring Boot y comunicación asíncrona mediante JSON con una interfaz dinámica en JavaScript ES6.</p>
+                </article>
+
+                <!-- AUTOMATIZACIÓN -->
+                <article class="project-card" onclick="location.href='./python/index.html'">
+                    <div class="project-header">
+                        <h3>Automatización y Herramientas de Sistema</h3>
+                        <span class="project-tech">Python / Bash / Node.js</span>
+                    </div>
+                    <p>Conjunto de scripts y herramientas ligeras orientadas a la manipulación local de ficheros, procesamiento de datos y automatización de tareas del sistema operativo.</p>
+                </article>
+
+                <!-- JUEGOS DE RITMO / JS INTERACTIVO -->
+                <article class="project-card" onclick="location.href='./js/index.html'">
+                    <div class="project-header">
+                        <h3>Interfaz Web Interactiva y Consumo de APIs</h3>
+                        <span class="project-tech">JavaScript ES6 / HTML5 / Web Audio API</span>
+                    </div>
+                    <p>Capa cliente dinámicamente conectada con el Back-End. Gestión del DOM, comunicación asíncrona mediante Fetch API (JSON) y prototipado interactivo con captura de eventos en tiempo real.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ENFOQUE DE HARDWARE Y ESTILO DE VIDA -->
+        <section id="interests" class="section card-steampunk">
+            <h2 class="section-title"><span class="accent">[04]</span> Intereses y Enfoque Multidisciplinar</h2>
+            <div class="interests-container">
+                <div class="interest-box">
+                    <div class="interest-icon">⚙️</div>
+                    <h3>Hardware y Eficiencia Térmica</h3>
+                    <p>Análisis comparativo de componentes, optimización de curva de rendimiento/TDP, cálculo de disipación térmica y diseño de flujos de aire según el factor de forma del chasis.</p>
+                </div>
+
+                <div class="interest-box">
+                    <div class="interest-icon">🎵</div>
+                    <h3>Síntesis y Juegos de Ritmo</h3>
+                    <p>Interés en la síntesis de voz (Vocaloid), música electrónica y el diseño técnico detrás de las mecánicas de juegos de ritmo de ritmo rápido como <em>Friday Night Funkin'</em>.</p>
+                </div>
+
+                <div class="interest-box">
+                    <div class="interest-icon">🎮</div>
+                    <h3>Resolución y Desconexión</h3>
+                    <p>Desarrollo autónomo de pequeños programas de utilidad práctica. Mantengo un equilibrio diario dando paseos al aire libre con mi perra para desconectar.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h2>&lt;Contacto /&gt;</h2>
+            <p>Disponible para consultas técnicas, proyectos de desarrollo Back-End o administración de sistemas.</p>
+            <div class="contact-links">
+                <a href="mailto:tu-email@dominio.com" class="btn-neon">Enviar Correo</a>
+                <a href="https://github.com/elnacionalcomedy303" target="_blank" rel="noopener" class="btn-neon">Perfil de GitHub</a>
+            </div>
+            <p class="copyright">© <span id="year"></span> Mario — Arquitectura Java, Entornos LTS y Optimización de Hardware</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
